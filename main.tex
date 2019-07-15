@@ -1,0 +1,120 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.4, 27 July 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[10pt,a4paper]{altacv}
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+% Colours definition
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+%% sample.bib contains your publications
+% \addbibresource{sample.bib}
+
+\usepackage[colorlinks]{hyperref}
+
+\begin{document}
+
+% PERSONAL INFO -------------------------------------------------------------------------------------------
+
+\name{RODRIGO HERNÁNDEZ MOTA}
+\tagline{DATA ENGINEER | DATA SCIENTIST}
+\photo{2.8cm}{2019-03-06.png}
+\personalinfo{
+  % You can add your own with \printinfo{symbol}{detail}
+  % For more options: http://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf
+  \mailaddress{contact@rhdzmota.com}
+  \location{GDL, MX}
+  \twitter{@rhdzmota}
+  \linkedin{linkedin.com/in/rhdzmota}
+  \github{github.com/rhdzmota}
+  \printinfo{\faLaptop}{rhdzmota.com}
+
+}
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\AtBeginEnvironment{itemize}{\small}
+
+
+% EXPERIENCE ----------------------------------------------------------------------------------------------
+
+\cvsection[page1sidebar]{Experience}
+
+
+\cvevent{\textbf{Senior Data Engineer}}{LeadGenius}{2018-11-05 -- current}{WeWork Landmark GDL, MX}
+\begin{itemize}
+    \item Enhanced the data pipeline and entity resolution with Apache Spark.
+    \item Created a search interface based on Elasticsearch.
+    \item Business data-modelling and data-quality assessments. 
+\end{itemize}
+
+
+\cvevent{\textbf{Consultant - Big Data Engineer}}{Intersys Consulting}{2018-03-20 -- 2018-11-02}{Punto Sao Paulo HSBC GDL, MX}
+\begin{itemize}
+    \item Contributed to the definition of the big data career path.  
+    \item Designed a Scala Basics Nanodegree for consultants. 
+    \item Internal projects and POCs using big data tech (e.g., Akka Http \& Streaming, Cassandra, Kafka, Spark).
+\end{itemize}
+
+\cvevent{\textbf{Junior Data Scientist}}{CRABI}{2017-02-01 -- 2018-03-16}{Andares Corporativo GDL, MX}
+\begin{itemize}
+    \item Contributed to the pricing model and risk prediction algorithm.
+    \item Contributed to the real-time data processing engine.
+\end{itemize}
+
+\cvevent{\textbf{Intern Data Scientist}}{CRABI}{2016-11-01 -- 2017-02-01}{Andares Corporativo GDL, MX}
+
+\medskip
+
+% VOLUNTEER -----------------------------------------------------------------------------------------------
+
+\cvsection{VOLUNTEER}
+
+\cvevent{Academic Council}{Math \& Physics department at ITESO}{2014 -- 2016}{GDL, MX}
+\begin{itemize}
+    \item Contributed to the financial-engineering career path \& framework.
+    \item Promote awareness of financial-engineering concepts in the corporate sector.
+    \item Study groups on math-oriented courses and programming languages. 
+\end{itemize}
+
+\cvevent{Financial-engineering Student Union}{ITESO}{2013 -- 2014}{GDL, MX}
+\begin{itemize}
+    \item Founding member of the financial-engineering student union.
+\end{itemize}
+
+\medskip
+
+\clearpage
+
+
+\end{document}
